@@ -1,4 +1,4 @@
-grammar parser;
+grammar fish;
 
 chat : line+ EOF ;
 
