@@ -1,0 +1,12 @@
+expression     : addition;
+addition       : multiplication ('+' multiplication)* ;
+multiplication : atom ('*' atom)* ;
+atom: NUMBER ;
+
+
+// this is a recursiove decent parser 
+// ('+' multiplication)* = zero or more + something pairs
+//     atom (parentheses, numbers, variables)
+    multiplication (*, /) , addition (+, -)     ,comparison (>, <) ,equality (==, !=) ,logicalAnd (&&) logicalOr (||)
+
+  
